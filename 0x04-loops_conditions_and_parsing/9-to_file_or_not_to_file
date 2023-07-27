@@ -6,17 +6,18 @@
 #  if it's a regular one: school is a regular file
 # if it isn't regular: (nothing)
 #if the file doesn't exist : school file does not exist
-if [ -e $school ]; then
+name=school
+if [ -e $name ]; then
 	echo "school file exists"
 else
 	echo "school file does not exist"
 	exit 1
 fi
-if [ -s $school ]; then
-	echo "school file is empty"
-else
+if [ -s $name ]; then
 	echo "school file is not empty"
+else
+	echo "school file is empty"
 fi
-if [ -f $school ];then
+if [ -f $name ];then
 	echo "school is a regular file"
 fi
