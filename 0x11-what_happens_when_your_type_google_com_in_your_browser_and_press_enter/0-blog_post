@@ -1,0 +1,41 @@
+What Happens When You Type https://www.google.com  and Press Enter
+
+Have you ever wondered what happens behind the scenes when you type a web address (URL) like "https://www.google.com" into your browser and press Enter? It all boils down to a complex but fascinating interplay of technologies working together to bring you the information you seek. Let's delve into the journey of a URL from your browser to the content on your screen.
+
+1. DNS Request: Decoding the Address
+
+The internet doesn't understand human-readable website names. That's where the Domain Name System (DNS) comes in. It acts like a giant phonebook for the internet, translating domain names (like "[invalid URL removed]") into numerical IP addresses that computers can understand. When you enter a URL, your browser sends a DNS request to a DNS server, asking it to translate the domain name into its corresponding IP address.
+
+2. TCP/IP: The Communication Protocol
+
+Once the DNS lookup is complete, your browser has the IP address it needs to connect to the server hosting the website. Now, it relies on the Transmission Control Protocol/Internet Protocol (TCP/IP) suite, the fundamental communication language of the internet. TCP ensures reliable data transmission by breaking down large data packets into smaller ones, sending them across the network, and acknowledging their receipt. IP, on the other hand, addresses each packet, ensuring it reaches the correct destination server.
+
+3. Firewall: Guardian of the Network
+
+Before reaching the destination server, the data packets might pass through a firewall. This security system acts as a gatekeeper, monitoring incoming and outgoing traffic and blocking any packets deemed suspicious or malicious, protecting your computer and the network.
+
+4. HTTPS/SSL: Encryption for Secure Communication
+
+When the URL starts with "https," it indicates the use of Hypertext Transfer Protocol Secure (HTTPS) with Secure Sockets Layer (SSL) or its successor, Transport Layer Security (TLS). This creates a secure tunnel between your browser and the server, encrypting the data being exchanged. This is crucial for protecting sensitive information like passwords or credit card details.
+
+5. Load Balancer: Distributing the Load
+
+In high-traffic scenarios, websites often employ load balancers. These act as traffic directors, distributing incoming requests across multiple web servers to ensure smooth performance and prevent any single server from becoming overloaded.
+
+6. Web Server: Delivering the Content
+
+The web server receives the request from your browser. It's the software responsible for storing, processing, and delivering the website's content. It interprets the request, retrieves the relevant files (HTML, CSS, JavaScript, images, etc.), and sends them back to your browser.
+
+7. Application Server (Optional): Dynamic Content Generation
+
+Some websites use application servers in conjunction with web servers. These servers handle complex logic and database interactions to generate dynamic content, like personalized recommendations or shopping carts. They communicate with the web server to provide the final content for your browser.
+
+8. Database (Optional): Powering Dynamic Applications
+
+Websites that require user interaction or display dynamic content often rely on databases to store and manage information. The application server might interact with the database to retrieve or update data as needed.
+
+9. Rendering the Page: Bringing it to Life
+
+Finally, your browser receives the website's files from the web server. It utilizes the HTML code as the blueprint, the CSS for styling, and JavaScript for interactivity to render the webpage and display it on your screen.
+
+This entire process happens in milliseconds, giving you the illusion of instant access to the information you seek. The next time you browse the internet, take a moment to appreciate the complex dance of technologies that bring the web to life!
